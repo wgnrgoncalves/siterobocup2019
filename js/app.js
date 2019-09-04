@@ -2,7 +2,7 @@
 
 var app = angular.module('robo', ['ui.router']);
 
-app.config(function ($stateProvider) {
+app.config(function ($stateProvider,$urlRouterProvider) {
   // An array of state definitions
   var states = [
     {
@@ -10,12 +10,11 @@ app.config(function ($stateProvider) {
       url: '/home',
       component: 'home'
     },
-    // },
-    // {
-    //   name: 'robo',
-    //   url: '/robo',
-    //   component: 'robo'
-    // },
+    {
+      name: 'blastoise',
+      url: '/blastoise',
+      component: 'blastoise'
+    },
     // {
     //   name: 'blastoise',
     //   url: '/blastoise',
@@ -36,20 +35,23 @@ app.config(function ($stateProvider) {
       url: '/robocup',
       component: 'robocup'
     },
-    // {
-    //   name: 'galeria',
-    //   url: '/galeria',
-    //   component: 'galeria'
-    // },
-    // {
-    //   name: 'contato',
-    //   url: '/contato',
-    //   component: 'contato'
-    // }
+    {
+      name: 'galeria',
+      url: '/galeria',
+      component: 'galeria'
+    },
+    {
+      name: 'contato',
+      url: '/contato',
+      component: 'contato'
+    }
   ]
 
   // Loop over the state definitions and register them
   states.forEach(function (state) {
     $stateProvider.state(state);
   });
+  // $stateProvider
+  //   .state("otherwise", { url : '/home'});
+  $urlRouterProvider.otherwise('/home')
 });
