@@ -11,25 +11,20 @@ app.config(function ($stateProvider,$urlRouterProvider) {
       component: 'home'
     },
     {
-      name: 'blastoise',
-      url: '/blastoise',
-      component: 'blastoise'
+      name: 'robo',
+      url: '/robo',
+      component: 'robo'
     },
-    // {
-    //   name: 'blastoise',
-    //   url: '/blastoise',
-    //   component: 'blastoise'
-    // },
-    // {
-    //   name: 'projeto',
-    //   url: '/projeto',
-    //   component: 'projeto'
-    // },
-    // {
-    //   name: 'arma',
-    //   url: '/arma',
-    //   component: 'arma'
-    // },
+    {
+      name: 'projeto',
+      url: '/projeto',
+      component: 'projeto'
+    },
+    {
+      name: 'arma',
+      url: '/arma',
+      component: 'arma'
+    },
     {
       name: 'robocup',
       url: '/robocup',
