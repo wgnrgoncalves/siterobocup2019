@@ -15,37 +15,39 @@
 <body ng-app="robo">
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a ui-sref="home" class="nav-link" ui-sref-active="active">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Robô
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" ui-sref="robo">Blastoise</a>
-                            <a class="dropdown-item" ui-sref="projeto">Projeto</a>
-                            <a class="dropdown-item" ui-sref="arma">Arma</a>
-                        </div>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" ui-sref="robocup" ui-sref-active="active">RoboCup</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" ui-sref="galeria" ui-sref-active="galeria">Galeria</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" ui-sref="contato" ui-sref-active="contato">Contato</a>
-                    </li>
-                </ul>
+            <div class="container d-flex justify-content-between">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a ui-sref="home" class="nav-link" ui-sref-active="active">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Robô
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" ui-sref="robo">Blastoise</a>
+                                <a class="dropdown-item" ui-sref="projeto">Projeto</a>
+                                <a class="dropdown-item" ui-sref="arma">Arma</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" ui-sref="robocup" ui-sref-active="active">RoboCup</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" ui-sref="galeria" ui-sref-active="galeria">Galeria</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" ui-sref="contato" ui-sref-active="contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -54,7 +56,9 @@
         <ui-view></ui-view>
     </main>
     <footer class="footer bg-dark">
-        <p class="text-light">&copy; Blastoise 2019</p>
+        <div class="container">
+            <p class="text-light">&copy; Blastoise 2019</p>
+        </div>
     </footer>
     <script src="./js/jquery-3.4.1.js"></script>
     <script src="./js/bootstrap.min.js"></script>
